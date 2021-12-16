@@ -1,0 +1,180 @@
+.container{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+    
+}
+h1{
+    color: white;
+    font-family: cursive;
+}
+.form{
+    width: 100%;
+}
+.form .search{
+    margin: 10px 70px;
+    display: flex;
+    
+}
+.form .search input{
+    width: 85%;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    border:none
+
+}
+.form .search input::placeholder{
+    font-family: cursive;
+}
+.form .search button{
+    width: 15%;
+    border-radius: 0px 10px 10px 0px;
+    border:none
+}
+.tasks{
+    overflow: scroll;
+    scroll-behavior:smooth ;
+    width: 100%;
+  
+   
+}
+.task{
+    
+    margin: 10px 30px; 
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: cursive;
+    
+    
+    
+}
+.task .task-flow{
+    overflow-wrap: break-word;
+    overflow:hidden;
+}
+.tasks::-webkit-scrollbar{
+    display: none;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+    margin-right: 5px;
+   
+}
+.icons div{
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+.complete{
+    text-decoration:line-through ;
+    
+}
+.complete-bg{
+    background-color: rgb(122, 122, 122);
+}
+.todo{
+    cursor: pointer;
+    width: 85%;
+   
+    padding: 10px 10px ;
+    
+}
+.btn:active{
+    background-color: rgb(100, 210, 237);
+    
+}
+.btn{
+    background-color: greenyellow;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.clear{
+    background-color: rgb(255, 244, 148);
+    border-radius: 10px;
+    border: none;
+    padding: 10px 10px ;
+    font-family: cursive;
+}
+.clear:hover{
+    background-color: rgb(155, 29, 54);
+    color: white;
+}
+
+@media(max-width:750px) {
+    
+    .icons{
+        margin-right: 15px;
+    }
+    
+}
+@media(max-width:450px) {
+    h1{
+        font-size: 20px;
+    }
+    .icons{
+        margin-right: 10px;
+    }
+    .icons div{
+        margin-right: 5px;
+        margin-left: 5px;
+        
+    }
+    .todo{
+        font-size: 15px;
+    }
+    input::placeholder{
+        font-size: 13px;
+    }
+}
+@media(max-width:350px) {
+    h1{
+        font-size: 15px;
+        
+    }
+    
+    .icons div{
+        margin-right: 3px;
+        margin-left: 3px;
+        
+    }
+    .todo{
+        font-size: 15px;
+    }
+    input::placeholder{
+        font-size: 13px;
+    }
+}
+@media(max-width:250px) {
+    h1{
+        font-size: 15px;
+    }
+    
+    .icons div{
+        margin-right: 1px;
+        margin-left: 1px;
+        
+    }
+    .todo{
+        font-size: 13px;
+    }
+    input::placeholder{
+        font-size: 10px;
+    }
+}
