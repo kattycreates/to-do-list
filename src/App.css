@@ -2,6 +2,7 @@
     width: 100vw;
     height: auto;
     display: flex;
+    padding-top: 5vh;
     justify-content: center;
     align-items: center;
 }
@@ -12,8 +13,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(114, 114, 114);
+    box-shadow: 3px 5px 7px 4px rgb(78, 78, 78);
     
+}
+header{
+    border-bottom: black;
 }
 h1{
     color: white;
@@ -86,7 +91,7 @@ h1{
     
 }
 .complete-bg{
-    background-color: rgb(122, 122, 122);
+    background-color: rgb(82, 82, 82);
 }
 .todo{
     cursor: pointer;
@@ -121,6 +126,10 @@ h1{
     
     .icons{
         margin-right: 15px;
+    }
+    .form .search button{
+        width: 25%;
+        
     }
     
 }
