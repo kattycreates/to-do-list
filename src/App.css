@@ -133,7 +133,24 @@ h1{
     }
     
 }
+@media(max-width:650px) {
+    .wrapper{
+        width: 80vw;
+    }
+    .icons{
+        margin-right: 15px;
+    }
+    .form .search button{
+        width: 25%;
+        
+    }
+    
+}
 @media(max-width:450px) {
+    .wrapper{
+        width: 90vw;
+        
+    }
     h1{
         font-size: 20px;
     }
@@ -153,6 +170,7 @@ h1{
     }
 }
 @media(max-width:350px) {
+    
     h1{
         font-size: 15px;
         
